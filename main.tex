@@ -1,0 +1,246 @@
+%-------------------------
+% Resume in Latex
+% Author : Anusha Srinivasan
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[12pt]{article}
+\usepackage[paperwidth=9.8in, paperheight=15in, margin=0.75in]{geometry}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{1pt}}
+  }
+}
+
+% Second format with heading and content
+\newcommand{\resumeItemTwo}[2]{
+  \item\small{
+    \textbf{#1}: {#2}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-8pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-5pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeItemProjListEnd}{\end{itemize}\vspace{-10pt}}
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Anusha Srinivasan} \\ \vspace{1pt}
+    \small (+91) 94825-45687 $|$ \href{mailto:x@x.com}{\underline{nsh.srnvsn@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/...}{\underline{linkedin.com/in/nsh-srnvsn}} $|$
+    \href{https://github.com/...}{\underline{github.com/NshSrnvsn}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Georgia Institute of Technology}{}
+      {Master of Science in Computer Science (OMSCS)}{Aug. 2024 -- Present}
+    \resumeSubheading
+      {Ambedkar Institute of Technology}{Bengaluru, India}
+      {Bachelor of Information Science and Engineering}{Aug. 2016 -- Oct 2020}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+
+  % Oracle Experience
+  \resumeSubheading
+    {Oracle}{Bengaluru, India}
+    {Software Engineer I}{June 2020 -- Present}
+    \resumeItemListStart
+      \resumeItemTwo{Merit-based Incentive Payment System (MIPS)}
+        {Spearheaded the design and development of a high-performance data submissions platform for the Centers for Medicare \& Medicaid Services (CMS), enabling seamless ECQM (Electronic Clinical Quality Measures) reporting. Architected a scalable Ruby backend and interactive JavaScript frontend, boosting system reliability and achieving a 25\% increase in analytics accuracy through optimized API services for score plan calculations.}
+      \resumeItemTwo{MIPS Value Pathways (MVPs) Application}
+        {Led the frontend development team to deliver critical MVP-aligned features ahead of schedule, within a compressed 5-month timeline. Enhanced submission workflows by integrating real-time ECQM compliance checks, significantly improving user efficiency and adaptability to evolving regulatory requirements.}
+      
+    \resumeItemListEnd
+
+  % Cerner Experience
+  \resumeSubheading
+    {Cerner}{Bengaluru, India}
+    {Software Engineer}{Apr 2021 -- Sept 2023}
+    \resumeItemListStart
+      \resumeItemTwo {Data Warehouse Tool Application}
+        {Enhanced the ReactJS-based data warehouse platform by developing advanced UI components and optimizing backend services. Refactored NodeJS and Express APIs, reducing response times by 18\%. Identified and resolved fortify vulnerabilities, improving security compliance and ensuring seamless Gov. deployments for sensitive healthcare data.}
+      \resumeItemTwo{SAML-ADFS Authentication}
+        {Led the redesign of legacy C\# and Java authentication systems, integrating SAML-ADFS protocols to enhance security and enable single sign-on functionality. Delivered the transformation ahead of schedule, improving authentication reliability for over 5,000 healthcare providers.}
+      \resumeItemTwo{Healthcare Intelligence Dashboard and Automation}
+        {Diagnosed and resolved critical bugs, including performance bottlenecks and SQL injection vulnerabilities. Automated manual processes with a Python-based script, reducing manual workflows by 85\% and increasing team productivity. Proactively mitigated 170 critical and high CVEs within 2 months, ensuring adherence to federal security standards and timely deployments.}
+    \resumeItemListEnd
+
+  % JP Morgan Chase & Co. Experience
+  \resumeSubheading
+    {JP Morgan Chase \& Co.}{Bengaluru, India}
+    {Software Engineering Intern}{April 2020 -- Oct 2020}
+    \resumeItemListStart
+      \resumeItem
+        {Designed and optimized data feeds to improve stock trading operations and integrated \emph{Perspective}, a real-time data visualization tool. Collaborated on the frontend development of internal trading tools using React and Node.js.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+
+
+%-----------PROJECTS-----------
+\section{\href{https://github.com/NshSrnvsn}{Projects}}
+    \resumeSubHeadingListStart
+    \resumeProjectHeading
+          {\textbf{Mountain car} $|$ \emph{Python, Gymnasium, numpy}}{Nov 2024}
+          \resumeItemListStart
+            \resumeItem{Developed an implementation to train an agent to solve the OpenAI Gym Mountain Car environment with Q-Learning, SARSA, Policy iteration and Value iteration. It also contains pre-trained agents for the model-free algorithms.}
+          \resumeItemProjListEnd
+      \resumeProjectHeading
+          {\textbf{WSN Load balancing using Ant Colony Optimization} $|$ \emph{Python, Simulink, Matlab}}{Feb 2020}
+          \resumeItemListStart
+            \resumeItem{As part of Bachelors project, Implemented a meta-heuristic algorithm to route network traffic, inspired from ant pheromone trails}
+          \resumeItemProjListEnd
+      \resumeProjectHeading
+          {\textbf{Smart Farm} $|$ \emph{Java, Arduino Uno, sensors}}{April 2019}
+          \resumeItemListStart
+            \resumeItem{Developed irrigation synchronization via moisture detection of soil. Presented at the 5th National Level Techno Exhibition at Dr. AIT}
+          \resumeItemProjListEnd
+      \resumeProjectHeading
+          {\textbf{Image Steganography} $|$ \emph{Python, Tkinter}}{Oct 2018}
+          \resumeItemListStart
+            \resumeItem{Created a GUI and CLI application for discrete communication using encrypted images.}
+          \resumeItemProjListEnd
+    \resumeSubHeadingListEnd
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, Python, SQL, JavaScript, Ruby} \\
+     \textbf{Frameworks}{: React, Node.js, SpringBoot, MongoDB, Jest, GraphQL} \\
+     \textbf{Machine Learning Libraries}: Scikit-learn, TensorFlow, PyTorch, Keras, Hugging Face Transformers \\
+     \textbf{Data Analysis \& Visualization}: Pandas, NumPy, Matplotlib, Seaborn \\
+     \textbf{Developer Tools}{: Git, Jenkins, Kubernetes, AWS} 
+     
+    }}
+ \end{itemize}
+
+ %
+%-----------EXTRA CURRICULAR SKILLS-----------
+\section{Extra-Curriculars}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Section Leader, Code In Place}: Stanford University \\
+     \textbf{\href{https://www.womentech.net/user/2294}{Global Ambassador}}: WomenTech Network
+    }}
+ \end{itemize}
+
+%-----------EXTRA CURRICULAR SKILLS-----------
+\section{Certifications}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+    \textbf{\href{https://drive.google.com/file/d/1v6m9e7gAltzsUzG6Fdkpsmyiv_AjjYLn/view?usp=sharing}{Data Science \& Machine Learning}}: NPTEL, Indian Institute of Technology, Madras \\
+     \textbf{\href{https://certificates.automationanywhere.com/5aebc4c2-6f3d-4f6e-9c75-78654ecf079e}{RPA Bot Developer}}{: Automation Anywhere} \\
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
